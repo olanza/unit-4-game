@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid"> 
+        <div class="container">
+            <h1 class="display-4">Crystal Collector</h1>
+            <p class="lead">Each gem has a value, collect the number of gems necessary to match the number on the
+                screen!</p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid"> 
+        <div class="container">
+            <h1 class="display-4">Rules:</h1>
+            <p class="lead">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">You will be given a random number at the start of the game.</li>
+                    <li class="list-group-item">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+                    <li class="list-group-item">You win the game by matching your total score to random number, you lose the gqme if your total score goes above the random number.</li>
+                    <li class="list-group-item">The value of each crystal is hidden from you until you click on it.</li>
+                    <li class="list-group-item">Each time when the game starts, the game will change the values of each crystal.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    
+    <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Crystals:</h1>
+              <img id="crystal1" src="assets/images/crystal1.jpg" alt="crystal1">
+              <img id="crystal2" src="assets/images/crystal2.jpg" alt="crystal2">
+              <img id="crystal3" src="assets/images/crystal3.jpg" alt="crystal3">
+              <img id="crystal4" src="assets/images/crystal4.jpg" alt="crystal4">
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Your Number:</h1>
+                  <p id="totalNum" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Number To Match:</h1>
+                  <p id="numGuess" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Wins:</h1>
+                  <p id="wins" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Losses:</h1>
+                  <p id="losses" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
